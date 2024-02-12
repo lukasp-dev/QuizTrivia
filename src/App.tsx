@@ -139,9 +139,7 @@ function App() {
                     value="Next Question"
                     className="next-button"
                     width="full"
-                >
-
-                </AppButton>
+                />
             </Box>
         )
         }

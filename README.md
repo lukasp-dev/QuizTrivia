@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This Quiz App is a simple frontend project that enables user to solve 10 set of problems and see the results.
-[live production]
-[live production]: https://genuinelukas.github.io/quiz-app/
+This Quiz App is a simple frontend project that enables user to solve 10 set of problems and see the results.<br/>
+The site is live [here]
+[here]: https://genuinelukas.github.io/quiz-app/
 
 # Languages and Tools
 

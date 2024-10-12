@@ -3,7 +3,7 @@
 ## Introduction
 
 This Quiz App is a simple frontend project that enables user to solve 10 set of problems and see the results.<br/>
-The site is live [here]([https://genuinelukas.github.io/quiz-app/](https://lukasp-dev.github.io/quiz-app/))
+The site is live [here](https://lukasp-dev.github.io/quiz-app/)
 
 # Languages and Tools
 

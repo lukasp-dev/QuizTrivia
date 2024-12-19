@@ -1,23 +1,39 @@
 name: Deploy to GitHub Pages
+
 on:
   push:
-    branches: [ main ]
-  workflow_dispatch:
+    branches: [ main ]       
+  workflow_dispatch:        
 
 permissions:
-  contents: write    # contents write permission
+  contents: write            
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3  
-      - uses: pnpm/action-setup@v2
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js with pnpm
+        uses: pnpm/action-setup@v2
         with:
           version: 7
-      - run: pnpm install
-      - run: pnpm run build
-      - name: Deploy
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build project
+        run: pnpm run build
+
+      - name: List dist folder
+        run: ls -la dist
+
+      - name: Show contents of dist/assets
+        run: ls -la dist/assets
+
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
